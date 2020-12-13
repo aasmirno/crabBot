@@ -71,7 +71,7 @@ Log file handling
 
 //appends file if it exists
 if (fs.existsSync( 'log.txt' )) {
-    fs.appendFile('log.txt', "crabBot log restarted at: " + (new Date().getHours() - 12) + ":" + new Date().getMinutes() + ":" + new Date().getSeconds() + "\n", function (err){
+    fs.appendFile('log.txt', "crabBot log restarted at: " + new Date().getMonth() + "/" + new Date().getDay() + "/" +new Date().getFullYear() + "  "+ new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds() + "\n", function (err){
         if(err) {
             console.log(err);
         }
@@ -80,7 +80,7 @@ if (fs.existsSync( 'log.txt' )) {
 
 //creates new log file if one isnt present
 } else {
-    fs.writeFile('log.txt', "crabBot log created at: " + (new Date().getHours() - 12) + ":" + new Date().getMinutes() + ":" + new Date().getSeconds() + "\n", function (err){
+    fs.writeFile('log.txt', "crabBot log created at: " + new Date().getMonth() + "/" + new Date().getDay() + "/" +new Date().getFullYear() + "  "+ new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds() + "\n", function (err){
         if(err) {
             console.log(err);
         }
