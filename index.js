@@ -91,7 +91,7 @@ if (fs.existsSync( 'log.txt' )) {
 
 //logs message to log file
 function logMessage( message ) {
-    fs.appendFile('log.txt', " " + (new Date().getHours() - 12) + ":" + new Date().getMinutes() + ":" + new Date().getSeconds() + " " + message.content + " DisplayName: " + message.member.displayName + ", Member#: " + message.member + ", Channel: " + message.channel.toString() + " in " + message.guild.toString(0) + "\n", function (err){
+    fs.appendFile('log.txt', " " + new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds() + " " + message.content + " DisplayName: " + message.member.displayName + ", Member#: " + message.member + ", Channel: " + message.channel.toString() + " in " + message.guild.toString(0) + "\n", function (err){
         if(err) {
             console.log(err);
         }
