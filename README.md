@@ -16,7 +16,7 @@ Open the folder in a terminal and run ```node ./index.js -h``` to display the he
 * -t  [token] : starts the bot with provided discord bot token
 
 ## Misc
-crabBot will create a log file in the folder that it is installed
+crabBot will create a log file in the folder that it is installed but this is (currently) easily changed by editing lines 73,74,83, and 94.  
 
 Why command line?
 
