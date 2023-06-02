@@ -9,7 +9,7 @@ $ npm install
 ```
 
 ## Running
-Open the folder in a terminal and run ```node ./index.js -h``` to display the help menu. The bot is designed to run continuously in the background and should be compatible with most automation methods, personally I had it running on a RPI 4 mod B without any serious issues.
+Open the folder in a terminal and run ```node ./index.js -h``` to display the help menu. The bot is designed to run continuously in the background and should be compatible with most automation methods, personally I had it running on a RPI 4 mod B without any issues.
 
 ## Options
 * -h : Displays the help menu and list of options
