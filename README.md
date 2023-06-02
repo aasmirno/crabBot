@@ -9,16 +9,11 @@ $ npm install
 ```
 
 ## Running
-Open the folder in a terminal and run ```node ./index.js -h``` to display the help menu
+Open the folder in a terminal and run ```node ./index.js -h``` to display the help menu. The bot is designed to run continuously in the background and should be compatible with most automation methods, personally I had it running on a RPI 4 mod B without any serious issues.
 
 ## Options
 * -h : Displays the help menu and list of options
 * -t  [token] : starts the bot with provided discord bot token
 
-## Misc
+## Logging
 crabBot will create a log file in the folder that it is installed but this is (currently) easily changed by editing lines 73,74,83, and 94.  
-
-Why command line?
-
-the first iteration of this bot had a hardcoded discord token, and the only way that I could think of removing it was making the bot run from cmd, which also allows me to use the bot for more than one thing.
-
