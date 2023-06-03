@@ -1,7 +1,7 @@
 {
   "name": "crabbot",
   "version": "1.0.0",
-  "description": "discord bot against those fucking crabs",
+  "description": "discord bot against all crabs",
   "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.4.1",
+    "minimist": "^1.2.8",
     "prompt-sync": "^4.2.0"
   }
 }

@@ -1,8 +1,8 @@
 # crabBot
-A discord bot that detects and deletes the crab Emoji from any server it is a part of
+A discord bot that detects and deletes the crab Emoji from any server it is in.
 
 ## Installation
-Download the crabBot folder and install it locally using npm:
+Clone the crabBot folder and install it locally using npm:
 ```
 $ cd ../crabBot
 $ npm install
@@ -16,4 +16,7 @@ Open the folder in a terminal and run ```node ./index.js -h``` to display the he
 * -t  [token] : starts the bot with provided discord bot token
 
 ## Logging
-crabBot will create a log file in the folder that it is installed but this is (currently) easily changed by editing lines 73,74,83, and 94.  
+crabBot will search for a '''log.txt''' file in the same directory as itself and create one if it does not exist.
+
+## Discord bot permissions
+In the discord developer portal message content intent must be enable in order to view and manage messages, this program will not work with a bot that does not have this setting enabled.
